@@ -1,2 +1,36 @@
-<app-header></app-header>
-<router-outlet> </router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [opened]="isOpen">
+    <mat-nav-list class="nav">
+      <mat-list-item>
+        <mat-icon mat-list-icon>developer_board</mat-icon>
+        <span mat-line>Motherboard</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>select_all</mat-icon>
+        <span mat-line>Processor</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>memory</mat-icon>
+        <span mat-line>DDR</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>sim_card</mat-icon>
+        <span mat-line>HDD</span>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="accent">
+      <button mat-raised-button (click)="isOpen = !isOpen"><mat-icon>apps</mat-icon><span>Menu</span></button>
+    </mat-toolbar>
+    
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

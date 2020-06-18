@@ -1,0 +1,38 @@
+// button{
+//   margin-right: 1rem;
+// }
+
+// .navbar{
+//   justify-content: space-between;
+// }
+
+.mat-sidenav-container {
+  height: 100%;  
+  background-color: white;
+}
+
+.mat-drawer, .mat-drawer-push {
+  background-color: whitesmoke;
+  color: #212121;
+
+  mat-list-item, a {
+    color: black
+  }
+}
+
+mat-sidenav-contant {
+  padding: 20px;
+}
+
+mat-sidenav {
+  padding: 20px;
+  background-color: white;
+  min-width: 15%;
+  max-width: 20%;
+  box-shadow: 5px 0 5px -5px #212121;
+}
+
+button {
+  padding: 5px 50px;
+}
+
