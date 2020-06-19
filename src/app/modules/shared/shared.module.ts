@@ -7,6 +7,10 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 const materialModules: any[] = [
@@ -17,6 +21,9 @@ const materialModules: any[] = [
   MatSidenavModule,
   MatMenuModule,
   MatListModule,
+  MatDividerModule,
+  ScrollingModule,
+  MatGridListModule,
 ];
 
 @NgModule({

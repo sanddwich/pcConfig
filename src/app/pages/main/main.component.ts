@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  title: string = 'Материнская плата'
+
   constructor() { }
 
   ngOnInit(): void {

@@ -15,18 +15,25 @@
   background-color: whitesmoke;
   color: #212121;
 
-  mat-list-item, a {
-    color: black
+  mat-list-item {
+    padding: 1rem 0;
+    color: #212121;
+
+    &:hover {
+      background-color: rgb(231, 229, 229);
+    }
   }
+
+  // mat-divider{
+  //   background-color: #212121;
+  // }
 }
 
-mat-sidenav-contant {
-  padding: 20px;
-}
+// mat-sidenav-contant {
+//   padding: 20px;
+// }
 
 mat-sidenav {
-  padding: 20px;
-  background-color: white;
   min-width: 15%;
   max-width: 20%;
   box-shadow: 5px 0 5px -5px #212121;
@@ -36,3 +43,7 @@ button {
   padding: 5px 50px;
 }
 
+// cdk-virtual-scroll-viewport{
+//   height: 100%;
+//   background-color: grey;
+// }
