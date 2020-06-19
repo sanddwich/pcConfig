@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  title: string = 'Материнская плата'
+  title: string = 'Главная страница';
 
   constructor() { }
 

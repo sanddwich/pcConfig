@@ -10,6 +10,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -24,6 +25,7 @@ const materialModules: any[] = [
   MatDividerModule,
   ScrollingModule,
   MatGridListModule,
+  MatCardModule
 ];
 
 @NgModule({
