@@ -1,0 +1,55 @@
+@import './import.scss';
+
+$fz: 40px;
+
+$fx: 100px;
+
+%tpl {
+  box-sizing: border-box;
+  padding: 20px;
+  border: purple 2px dashed;
+}
+
+@mixin mix ($fx) {
+  font-size: $fx;
+}
+
+.block {
+  font-size: 20px;
+
+  span {
+    color: rgb(6, 49, 8);
+    font-weight: bold;
+    padding-bottom: 10vh;
+  }
+
+  .blockText {
+    color: blue;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  > p {
+    color: yellowgreen;
+  }
+}
+
+.link {
+  color:red;
+  text-decoration: none;
+
+  &:hover {
+    color:$linkColor;
+    font-size: $fz;
+    line-height: $fz;
+  }
+}
+
+.link-2 {
+  @extend %tpl;
+}
+
+.formix {
+  line-height: $fx;;
+  @include mix(50px);
+}

@@ -10,6 +10,7 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
 import { FooterComponent } from './templates/main/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ScssComponent } from './pages/scss/scss.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainLayoutComponent,
     FooterComponent,
     MainComponent,
+    ScssComponent,
   ],
   imports: [
     BrowserModule,
