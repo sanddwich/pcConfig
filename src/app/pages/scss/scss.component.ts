@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScssComponent implements OnInit {
 
+  hiImage: string = 'assets/img/image.jpg';
+
   constructor() { }
 
   ngOnInit(): void {

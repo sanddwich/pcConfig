@@ -9,10 +9,10 @@ const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: '/main', pathMatch: 'full'},
-      {path: 'main', component: MainComponent},
-      {path: 'scss', component: ScssComponent}
+      {path: 'main', component: MainComponent}
     ]
-  }
+  },
+  {path: 'scss', component: ScssComponent}
 ];
 
 @NgModule({
