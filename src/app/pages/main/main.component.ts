@@ -16,7 +16,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.blockPercent = this.devsizeService.tiles(this.windowSize);
-    console.log(this.blockPercent);
+    // console.log(this.blockPercent);
   }
 
 }

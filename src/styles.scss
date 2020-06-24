@@ -1,14 +1,112 @@
-
-html, body { 
+html,
+body {
   height: 100%;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-#container{  
-  min-height: 100%; 
-  color:black; 
-  box-sizing: border-box;
+body {
   margin: 0;
-  // padding: 2rem;
-  // min-width: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.container {
+  color: black;
+  min-height: 100%;
+  box-sizing: border-box;
+  margin: 80px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  position: fixed;
+  z-index: 100;
+}
+
+.wrap {
+  flex: 1 1 auto;
+}
+
+.footer {
+  color: black;
+}
+
+.objects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.objectdiv {
+  box-sizing: border-box;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.objectdiv__title {
+  color: white;
+  background-color: #424242;
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.objectdiv__img {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.objectdiv__text {
+  color: white;
+  background-color: #424242;
+  padding: 2rem;
+}
+
+.objectdiv__actions {
+  color: white;
+  background-color: #757474;
+  padding: 2rem;
+  border-radius: 0 0 1rem 1rem;
+
+  button {
+    margin-left: 1rem;
+  }
+}
+
+.header h1 {
+  font-size: 30px;
+  color: #424242;
+}
+
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 20px;
+  }
+  .objectdiv {
+    flex: 0 1 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .objectdiv {
+    flex: 0 1 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .objectdiv {
+    flex: 0 1 33.333%;
+  }
+}
+
+// #container{
+//   min-height: 100%;
+//   color:black;
+//   box-sizing: border-box;
+//   margin: 0;
+// }

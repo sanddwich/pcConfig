@@ -24,17 +24,20 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="accent">
-      <button mat-raised-button (click)="isOpen = !isOpen"><mat-icon>apps</mat-icon><span>Menu</span></button>
+    <mat-toolbar color="accent" class="navigation">
+      <button mat-raised-button (click)="isOpen = !isOpen">
+        <mat-icon>apps</mat-icon><span>Menu</span>
+      </button>
     </mat-toolbar>
-    
+
     <div class="container">
-      <router-outlet></router-outlet>
+      <div class="wrap">
+        <router-outlet></router-outlet>
+      </div>
     </div>
 
+    <footer class="footer">
+      <app-footer></app-footer>
+    </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-
-
-
